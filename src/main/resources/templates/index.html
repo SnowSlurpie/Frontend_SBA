@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buddy By Daylight</title>
+<link rel="stylesheet" type="text/css"
+	href="../static/css/mainStyles.css">
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="../static/js/index.js"></script>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="bg-image"
+	style="background-image: url(../static/img/sadako_bg.jpg); background-size: cover;">
+	<header class="d-flex justify-content-between align-items-center">
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Buddy By Daylight</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+					aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="navbarDarkDropdownMenuLink" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"> Characters </a>
+							<ul class="dropdown-menu dropdown-menu-dark"
+								aria-labelledby="navbarDarkDropdownMenuLink">
+								<li><a class="dropdown-item" href="killers.html">Killers</a></li>
+								<li><a class="dropdown-item" href="survivors.html">Survivors</a></li>
+							</ul></li>
+							
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+
+
+	</header>
+	<main class="container my-5">
+		<section id="home" class="text-center">
+			<h1 class="mb-5">Welcome to Buddy By Daylight</h1>
+			<p>Buddy By Daylight is a fan-made website dedicated to the
+				popular survival horror game Dead by Daylight. Here, you can find
+				information about the killers and survivors.</p>
+			<p>Whether you're a seasoned player or just starting out, we hope
+				you'll find the information and resources on our site helpful in
+				your journey to become a formidable foe in The Fog</p>
+		</section>
+
+
+		<p id="killers" class="text-center my-5">
+			<script type="text/javascript">
+                var subArray = Array.from(charSet)
+                var subString = subArray.join(', ');
+                document.getElementById('randomSub').innerHTML = subString;
+            </script>
+		<p id="total"></p>
+		<script type="text/javascript" >
+                var subArrayLength = subArray.length;
+                document.getElementById('total').innerHTML = "The total number of Characters on the webite is: " + subArray.length;
+            </script>
+
+
+		<h1 id="killers" class="text-center my-5">
+			<a href="killers.html">Killers</a>
+		</h1>
+
+		<h1 id="survivors" class="text-center my-5">
+			<a href="survivors.html">Survivors</a>
+		</h1>
+
+		<!-- Form for users to submit new killer suggestions -->
+		<section id="suggestKiller">
+			<h2>Suggest a New Killer</h2>
+			<p>Do you have a great idea for a new killer in Dead by Daylight?
+				Let us know! Click here and fill out the form below and we'll
+				consider adding your suggestion to the game.</p>
+			<form action="#" method="post">
+				<label for="killerName">Killer Name:</label> <input type="text"
+					id="killerName" name="killerName" pattern="^[a-zA-Z0-9 ]+$"
+					required> <label for="killer-description">Killer
+					Description:</label>
+				<textarea id="killerDesc" name="killerDesc" rows="5" required></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+
+		<!--Form for users to suggest new Survivors  -->
+		<section id="suggestSurvivor">
+			<h2>Suggest a New Survivor</h2>
+			<p>Do you have a great idea for a new Survivor in Dead by
+				Daylight? Let us know! Click here and fill out the form below and
+				we'll consider adding your suggestion to the game.</p>
+			<form action="#" method="post">
+				<label for="survivorName">Survivor Name:</label> <input type="text"
+					id="survivorName" name="survivorName" pattern="^[a-zA-Z0-9 ]+$"
+					required> <label for="survivorDesc">Survivor
+					Description:</label>
+				<textarea id="survivorDesc" name="survivorDesc" rows="5" required></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Buddy By Daylight 2023</p>
+	</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
